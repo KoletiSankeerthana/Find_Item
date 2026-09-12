@@ -59,11 +59,6 @@ Save an item with a **photo, name, location, and notes**, then quickly find it l
 />
 </p>
 
-### 📍 Custom Location
-
-<p align="center">
-  <img src="screenshots/location.png" width="250"/>
-</p>
 
 ### 🔎 Search
 
@@ -520,9 +515,3 @@ GitHub:
 [https://github.com/KoletiSankeerthana](https://github.com/KoletiSankeerthana)
 
 ---
-
-will take users directly to your latest release.
-
-This gives your GitHub project the professional flow:
-
-**README → Features → Screenshots → Tech Stack → Architecture → Source Code → Download APK → Testing → Roadmap**.
