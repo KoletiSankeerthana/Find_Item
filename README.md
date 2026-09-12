@@ -38,43 +38,34 @@ Save an item with a **photo, name, location, and notes**, then quickly find it l
 ## 📱 Screenshots
 
 ### 🌟 Welcome Screen
-
 <p align="center">
- width="716" height="1599" alt="WhatsApp Image 2026-09-12 at 13 17 11" src="https://github.com/user-attachments/assets/12ada836-d847-4b4d-a9d7-048c68eb9664" />
-/>
+  <img width="716" height="1599" alt="WhatsApp Image 2026-09-12 at 13 17 11" src="https://github.com/user-attachments/assets/628b9ea3-dcda-4c60-91a6-77639a203c3e" />
+
 </p>
 
-### 👤 Account Selection
-
+### 👤 Account Screen
 <p align="center">
-  width="716" height="1599" alt="WhatsApp Image 2026-09-12 at 13 17 45" src="https://github.com/user-attachments/assets/4a30e986-e632-4f66-a322-3f16cab1b31d" />
-/>
-</p>
+  <img width="716" height="1599" alt="WhatsApp Image 2026-09-12 at 13 17 45" src="https://github.com/user-attachments/assets/dd1ec682-6a88-4079-8033-1da5493ff08f" />
 
+</p>
 
 ### ➕ Add Item
-
 <p align="center">
- <img width="716" height="1599" alt="WhatsApp Image 2026-09-12 at 13 18 22" src="https://github.com/user-attachments/assets/d46cb95d-70af-4cd6-8128-7fa20c59ba23" />
-</p>
-
-
-### 🔎 Search
-
-<p align="center">
-  <img width="716" height="1599" alt="WhatsApp Image 2026-09-12 at 13 19 39" src="https://github.com/user-attachments/assets/fc48dcbe-fb70-43e7-969c-2dd451ea87dd" />
+  <img width="716" height="1599" alt="WhatsApp Image 2026-09-12 at 13 18 22" src="https://github.com/user-attachments/assets/8e2f9bdb-702b-43b5-9371-572cd3339e9d" />
 
 </p>
 
+### 📦 Item Details
+<p align="center">
+  <img width="716" height="1599" alt="WhatsApp Image 2026-09-12 at 13 19 39" src="https://github.com/user-attachments/assets/55108de2-879c-4fd5-ad40-79f3d194732f" />
+
+</p>
 
 ### ⚙️ Settings
-
 <p align="center">
-  <img width="716" height="1599" alt="WhatsApp Image 2026-09-12 at 13 20 03" src="https://github.com/user-attachments/assets/5a4f886f-b2df-4375-90df-3849889e03e2" />
+  <img width="716" height="1599" alt="WhatsApp Image 2026-09-12 at 13 20 03" src="https://github.com/user-attachments/assets/bf3afa23-0608-40ec-97bf-adcf81034afc" />
 
 </p>
-
----
 
 ## 🎯 Problem Statement
 
