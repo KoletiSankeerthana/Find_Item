@@ -1,10 +1,3 @@
-Yes bro — the issue is that your current README is being rendered inside a **code block**, so GitHub is showing the `#`, `##`, `---`, etc. as plain text instead of interpreting them as Markdown.
-
-You should paste the following **directly into `README.md`**, making sure you do **not** put the entire README inside `markdown ... `.
-
-I’ve also structured it so you can add your app screenshots professionally.
-
----
 
 # 📍 Where Did I Keep It?
 
@@ -47,25 +40,23 @@ Save an item with a **photo, name, location, and notes**, then quickly find it l
 ### 🌟 Welcome Screen
 
 <p align="center">
-  <img src="screenshots/welcome.png" width="250"/>
+ width="716" height="1599" alt="WhatsApp Image 2026-09-12 at 13 17 11" src="https://github.com/user-attachments/assets/12ada836-d847-4b4d-a9d7-048c68eb9664" />
+/>
 </p>
 
 ### 👤 Account Selection
 
 <p align="center">
-  <img src="screenshots/account.png" width="250"/>
+  width="716" height="1599" alt="WhatsApp Image 2026-09-12 at 13 17 45" src="https://github.com/user-attachments/assets/4a30e986-e632-4f66-a322-3f16cab1b31d" />
+/>
 </p>
 
-### 🏠 Home Screen
-
-<p align="center">
-  <img src="screenshots/home.png" width="250"/>
-</p>
 
 ### ➕ Add Item
 
 <p align="center">
-  <img src="screenshots/add-item.png" width="250"/>
+ <img width="716" height="1599" alt="WhatsApp Image 2026-09-12 at 13 18 22" src="https://github.com/user-attachments/assets/d46cb95d-70af-4cd6-8128-7fa20c59ba23" />
+/>
 </p>
 
 ### 📍 Custom Location
@@ -77,22 +68,17 @@ Save an item with a **photo, name, location, and notes**, then quickly find it l
 ### 🔎 Search
 
 <p align="center">
-  <img src="screenshots/search.png" width="250"/>
+  <img width="716" height="1599" alt="WhatsApp Image 2026-09-12 at 13 19 39" src="https://github.com/user-attachments/assets/fc48dcbe-fb70-43e7-969c-2dd451ea87dd" />
+
 </p>
 
-### 📦 Item Details
-
-<p align="center">
-  <img src="screenshots/item-details.png" width="250"/>
-</p>
 
 ### ⚙️ Settings
 
 <p align="center">
-  <img src="screenshots/settings.png" width="250"/>
-</p>
+  <img width="716" height="1599" alt="WhatsApp Image 2026-09-12 at 13 20 03" src="https://github.com/user-attachments/assets/5a4f886f-b2df-4375-90df-3849889e03e2" />
 
-> **Note:** Replace the filenames above with the exact names of the screenshots you upload to the `screenshots` folder.
+</p>
 
 ---
 
@@ -131,64 +117,13 @@ Later, the user can simply search for **Passport** and immediately find its save
 The basic workflow is:
 
 **1. Create or select an account**
-
-↓
-
 **2. Add an item**
-
-↓
-
 **3. Add a photo**
-
-↓
-
 **4. Enter the item name**
-
-↓
-
 **5. Select or create a custom location**
-
-↓
-
 **6. Add optional notes**
-
-↓
-
 **7. Save the item**
-
-↓
-
 **8. Search for it whenever needed**
-
----
-
-## 📍 Custom Hierarchical Locations
-
-One of the key features of the application is its flexible location system.
-
-Users can create locations with multiple levels based on where they actually store their belongings.
-
-### Example 1
-
-`Home → Kitchen`
-
-### Example 2
-
-`Home → Kitchen → Cabinet`
-
-### Example 3
-
-`Home → Kitchen → Cabinet → 3rd Shelf`
-
-### Example 4
-
-`Office → Conference Room → Cabinet 2 → Top Shelf`
-
-### Example 5
-
-`Car → Boot → Left Side`
-
-There is no need to follow a fixed predefined location structure.
 
 ---
 
@@ -333,22 +268,6 @@ User data is stored locally:
 ```
 
 There is no Firebase or cloud database required for the core application.
-
----
-
-## 🔒 Privacy
-
-Privacy is one of the main design goals of the application.
-
-The core application does not require:
-
-* ❌ Firebase
-* ❌ Cloud database
-* ❌ Online authentication
-* ❌ Paid APIs
-* ❌ External backend
-
-The user's saved item information and photos remain stored locally on the device.
 
 ---
 
@@ -557,148 +476,6 @@ The application will be installed directly on the device.
 
 The application has been tested on a physical Android device.
 
-### Tested Functionality
-
-* ✅ Application build
-* ✅ Application installation
-* ✅ Application launch
-* ✅ Welcome flow
-* ✅ Account creation
-* ✅ Existing account selection
-* ✅ Multiple accounts
-* ✅ Duplicate account validation
-* ✅ Home screen
-* ✅ Add Item
-* ✅ Camera
-* ✅ Photo Picker
-* ✅ Photo preview
-* ✅ Photo replacement
-* ✅ Photo removal
-* ✅ Item validation
-* ✅ Custom locations
-* ✅ Multi-level locations
-* ✅ Location editing
-* ✅ Search
-* ✅ Location search
-* ✅ Notes search
-* ✅ Search suggestions
-* ✅ Recent searches
-* ✅ Sorting and filtering
-* ✅ Favorites / pinning
-* ✅ Item details
-* ✅ Item editing
-* ✅ Item deletion
-* ✅ Room persistence
-* ✅ Application restart persistence
-* ✅ Settings
-* ✅ About screen
-
----
-
-## 🧠 Image Recognition
-
-An experimental on-device image recognition feature was explored during development.
-
-The goal was to automatically identify objects in item photos and provide suggestions.
-
-However, general-purpose image recognition models did not provide sufficiently reliable results for the application's intended use cases.
-
-Therefore, image recognition is currently considered **experimental and paused**.
-
-The core application does **not depend on image recognition**.
-
----
-
-## 🎨 Design Goals
-
-The application was designed around the following principles:
-
-### Simple
-
-Users should be able to save an item quickly.
-
-### Fast
-
-Finding a saved item should take only a few seconds.
-
-### Private
-
-Personal belongings and their locations should remain local.
-
-### Flexible
-
-Users should be able to define locations based on their actual storage system.
-
-### Offline
-
-The core application should remain functional without internet connectivity.
-
-### User Friendly
-
-The interface uses a clean Material 3 design with a soft pastel visual style.
-
----
-
-## 🚧 Current Status
-
-### ✅ Completed
-
-* Android project setup
-* Jetpack Compose UI
-* Material 3 design
-* Welcome experience
-* Multiple local accounts
-* Account validation
-* Duplicate account protection
-* Home screen
-* Add Item workflow
-* Camera integration
-* Photo Picker
-* Local photo storage
-* Room database
-* Offline persistence
-* Custom hierarchical locations
-* Search
-* Search suggestions
-* Recent searches
-* Sorting
-* Filtering
-* Favorites / pinning
-* Item details
-* Item editing
-* Item deletion
-* Settings
-* About
-* Physical-device testing
-
-### 🧪 Experimental
-
-* On-device image recognition
-
-### ⏸️ Paused
-
-* Advanced automatic image recognition due to recognition accuracy limitations
-
----
-
-## 🗺️ Future Roadmap
-
-Possible future improvements include:
-
-* ⏰ Item reminders
-* 🏷️ Categories
-* 🗺️ Location Explorer
-* 🖼️ Grid/List view
-* 📤 Share item information
-* 🔐 App lock
-* 📊 Usage statistics
-* ⚠️ Duplicate item detection
-* 📍 Advanced location navigation
-* 🔎 More advanced search capabilities
-* ⚡ Performance optimization
-* ♿ Accessibility improvements
-* 🧪 Expanded automated testing
-
 ---
 
 ## 📚 Android Concepts Demonstrated
@@ -728,75 +505,6 @@ This project demonstrates practical experience with:
 
 ---
 
-## 🌟 Project Highlights
-
-### 📍 Flexible Location System
-
-Create detailed locations instead of being restricted to predefined options.
-
-### 📸 Real Photos
-
-Attach actual photos of belongings for easier identification.
-
-### 🔎 Powerful Search
-
-Find items through their name, location, or notes.
-
-### 👤 Multiple Users
-
-Maintain separate local collections for different users.
-
-### 🔐 Privacy Focused
-
-No cloud backend is required for the core application.
-
-### 💾 Persistent Storage
-
-Saved information remains available after closing and reopening the application.
-
-### 📱 Real Android Application
-
-Built and tested as a native Android application using Kotlin and Jetpack Compose.
-
----
-
-## 📊 Example
-
-Suppose you store your headphones in a drawer.
-
-You can save:
-
-```text
-📦 Item
-Headphones
-
-📍 Location
-Home → Bedroom → Study Table → Top Drawer
-
-📝 Notes
-Kept inside the black pouch.
-```
-
-Later, search:
-
-```text
-Headphones
-```
-
-and the application shows:
-
-```text
-📦 Headphones
-
-📍 Home → Bedroom → Study Table → Top Drawer
-
-📝 Kept inside the black pouch.
-```
-
-No need to remember where you put them. ✨
-
----
-
 ## 🔗 Repository
 
 **GitHub:**
@@ -812,90 +520,6 @@ GitHub:
 [https://github.com/KoletiSankeerthana](https://github.com/KoletiSankeerthana)
 
 ---
-
-## ⭐ Support
-
-If you find this project interesting:
-
-* ⭐ Star the repository
-* 🍴 Fork the project
-* 🐛 Report bugs
-* 💡 Suggest improvements
-* 🤝 Contribute ideas
-
----
-
-## 📄 License
-
-This project currently does not specify an open-source license.
-
-A suitable license can be added in the future if the project is released as an open-source project.
-
----
-
-## 📌 Summary
-
-**Where Did I Keep It?** is an offline-first Android application that helps users remember where they stored their belongings.
-
-### The idea is simple:
-
-**📸 Save it → 📍 Remember where → 🔎 Find it later**
-
-> **Remember where. Find when. ✨**
-
-````
-
-### ⚠️ Very important when you paste it
-
-Your current screenshot shows this:
-
-```text
-# 📍 Where Did I Keep It?
-````
-
-appearing literally on the page.
-
-That usually means the README content itself has been pasted **inside a Markdown code block**.
-
-Make sure your GitHub `README.md` starts exactly like this:
-
-```text
-# 📍 Where Did I Keep It?
-
-### Remember where. Find when. ✨
-```
-
-**Do not put three backticks before the first `#` or after the last line.**
-
-### 📸 For your screenshots
-
-Create this folder in your GitHub repository:
-
-```text
-screenshots
-```
-
-Then upload your actual app screenshots:
-
-```text
-screenshots/
-├── welcome.png
-├── account.png
-├── home.png
-├── add-item.png
-├── location.png
-├── search.png
-├── item-details.png
-└── settings.png
-```
-
-Once those files are uploaded, the README will display them automatically.
-
-For the **APK**, I'd keep it in **GitHub Releases rather than inside the repository**. Then this line:
-
-```markdown
-[Download APK](../../releases/latest)
-```
 
 will take users directly to your latest release.
 
