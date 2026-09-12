@@ -1,481 +1,904 @@
-Yes bro. The problem is that you pasted my **explanation + README together**, so GitHub is displaying the explanation as part of the README.
+Yes bro — the issue is that your current README is being rendered inside a **code block**, so GitHub is showing the `#`, `##`, `---`, etc. as plain text instead of interpreting them as Markdown.
 
-You should **replace the entire README.md contents** with only the following. This is much cleaner and professional, while still simple.
+You should paste the following **directly into `README.md`**, making sure you do **not** put the entire README inside `markdown ... `.
 
-````markdown
+I’ve also structured it so you can add your app screenshots professionally.
+
+---
+
 # 📍 Where Did I Keep It?
 
-A simple Android app that helps you remember where you kept your everyday things.
+### Remember where. Find when. ✨
 
-Save an item with a photo, name, location, and notes, then quickly find it later using search.
+**Where Did I Keep It?** is a simple, privacy-focused Android application that helps you remember where you kept your everyday belongings.
+
+Save an item with a **photo, name, location, and notes**, then quickly find it later using search.
+
+> 📸 Save your things
+> 📍 Remember where
+> 🔎 Find it later
 
 ---
 
 ## ✨ Features
 
-- 👤 Multiple user accounts
-- 🔐 Duplicate account name protection
-- 📦 Add and save items
-- 📸 Take photos using the camera
-- 🖼️ Select photos from the gallery
-- 📍 Custom multi-level locations
-- 📝 Add notes and descriptions
-- 🔎 Search items by name, location, and notes
-- 💡 Search suggestions and recent searches
-- 🔤 Search result highlighting and sorting
-- ⭐ Favorites / pinned items
-- 🗂️ Location filters and photo filters
-- 📄 Item details
-- ✏️ Edit saved items
-- 🗑️ Delete items
-- 🕐 Item history and timestamps
-- 💾 Persistent local storage
-- 🌐 Core functionality works offline
-- 🎨 Light pastel UI
-- ✨ Smooth and user-friendly interface
+* 👤 **Multiple User Accounts** — Create and manage separate local user accounts.
+* 🔐 **Duplicate Account Protection** — Prevents duplicate account names.
+* 📦 **Save Items** — Store belongings with a name, photo, location, and notes.
+* 📸 **Camera Support** — Take a photo directly from the app.
+* 🖼️ **Photo Picker** — Select existing photos from your device.
+* 📍 **Custom Locations** — Create flexible hierarchical locations such as `Home → Kitchen → Cabinet → 3rd Shelf`.
+* 🔎 **Advanced Search** — Search items using names, locations, and notes.
+* 💡 **Search Suggestions** — Get useful suggestions while searching.
+* 🕘 **Recent Searches** — Quickly access previous searches.
+* ⭐ **Favorites / Pinning** — Keep important items easily accessible.
+* ↕️ **Sorting & Filtering** — Organize and narrow down search results.
+* ✏️ **Edit Items** — Update item details, locations, notes, and photos.
+* 🗑️ **Delete Items** — Remove items with confirmation.
+* 💾 **Offline Storage** — Data is stored locally on the device.
+* 🔒 **Privacy Focused** — No cloud backend or online account is required.
+* 🎨 **Modern Material 3 UI** — Clean and friendly pastel interface.
+* 📱 **Physical Device Tested** — Tested on a real Android device.
 
 ---
 
-## 💡 How It Works
+## 📱 Screenshots
 
-### 1. Introduce
+### 🌟 Welcome Screen
 
-When the app opens, it introduces the purpose of the application.
+<p align="center">
+  <img src="screenshots/welcome.png" width="250"/>
+</p>
 
-### 2. Create or Select an Account
+### 👤 Account Selection
 
-New users can create an account.
+<p align="center">
+  <img src="screenshots/account.png" width="250"/>
+</p>
 
-Existing users can select an existing account.
+### 🏠 Home Screen
 
-Account names are checked to prevent duplicates.
+<p align="center">
+  <img src="screenshots/home.png" width="250"/>
+</p>
 
-### 3. Save an Item
+### ➕ Add Item
 
-Add:
+<p align="center">
+  <img src="screenshots/add-item.png" width="250"/>
+</p>
 
-- Item name
-- Photo
-- Location
-- Notes
+### 📍 Custom Location
 
-Example:
+<p align="center">
+  <img src="screenshots/location.png" width="250"/>
+</p>
 
-```text
-Item: Charger
+### 🔎 Search
 
-Location:
-Home → Living Room → TV Cabinet
+<p align="center">
+  <img src="screenshots/search.png" width="250"/>
+</p>
 
-Note:
-Behind the television box
-````
+### 📦 Item Details
 
-### 4. Find It Later
+<p align="center">
+  <img src="screenshots/item-details.png" width="250"/>
+</p>
 
-Search for the item using:
+### ⚙️ Settings
 
-```text
-charger
-```
+<p align="center">
+  <img src="screenshots/settings.png" width="250"/>
+</p>
 
-or:
-
-```text
-living room
-```
-
-or a word from the note.
-
-The application displays the saved item and its location.
+> **Note:** Replace the filenames above with the exact names of the screenshots you upload to the `screenshots` folder.
 
 ---
 
-## 📍 Custom Locations
+## 🎯 Problem Statement
 
-Users can create their own location hierarchy.
+People often forget where they kept their belongings.
 
 For example:
 
-```text
-Home
-→ Bedroom
-→ Cupboard
-→ Second Drawer
-→ Back Section
-```
+> *"Where did I keep my passport?"*
+> *"Which cupboard has my charger?"*
+> *"Where did I put that document?"*
 
-Another example:
+Instead of relying on memory, this application lets users create a digital record of their belongings.
 
-```text
-Office
-→ Conference Room
-→ Cabinet 2
-→ Top Shelf
-```
+For example:
 
-The number of location levels can be customized according to the user's needs.
+**Item**
+
+`Passport`
+
+**Location**
+
+`Home → Bedroom → Cupboard → 2nd Shelf`
+
+**Notes**
+
+`Inside the blue document folder.`
+
+Later, the user can simply search for **Passport** and immediately find its saved location.
+
+---
+
+## 🚀 How It Works
+
+The basic workflow is:
+
+**1. Create or select an account**
+
+↓
+
+**2. Add an item**
+
+↓
+
+**3. Add a photo**
+
+↓
+
+**4. Enter the item name**
+
+↓
+
+**5. Select or create a custom location**
+
+↓
+
+**6. Add optional notes**
+
+↓
+
+**7. Save the item**
+
+↓
+
+**8. Search for it whenever needed**
+
+---
+
+## 📍 Custom Hierarchical Locations
+
+One of the key features of the application is its flexible location system.
+
+Users can create locations with multiple levels based on where they actually store their belongings.
+
+### Example 1
+
+`Home → Kitchen`
+
+### Example 2
+
+`Home → Kitchen → Cabinet`
+
+### Example 3
+
+`Home → Kitchen → Cabinet → 3rd Shelf`
+
+### Example 4
+
+`Office → Conference Room → Cabinet 2 → Top Shelf`
+
+### Example 5
+
+`Car → Boot → Left Side`
+
+There is no need to follow a fixed predefined location structure.
+
+---
+
+## 🔎 Search
+
+The application allows users to search their saved belongings quickly.
+
+Search can be performed using:
+
+* Item name
+* Location
+* Notes
+
+### Example
+
+Searching for:
+
+`Kitchen`
+
+can find:
+
+`Home → Kitchen → Cabinet → 3rd Shelf`
+
+Searching for:
+
+`charger`
+
+can find an item based on its name or notes.
+
+The application also includes:
+
+* Search suggestions
+* Recent searches
+* Result highlighting
+* Sorting
+* Location filters
+* Photo filters
+* Favorites / pinning
 
 ---
 
 ## 👤 Multiple Accounts
 
-The app supports multiple accounts.
+The application supports multiple local users.
 
-Each account can maintain its own saved items.
+Each user can maintain their own collection of saved belongings.
 
-Example:
+For example:
 
 ```text
-Account A
-├── Keys
-├── Charger
-└── Documents
+User A
+ ├── Passport
+ ├── Camera
+ └── Charger
 
-Account B
-├── Backpack
-├── Watch
-└── Passport
+User B
+ ├── Books
+ ├── Documents
+ └── Accessories
 ```
 
-Users can switch between accounts from the application.
+All account and item information is stored locally on the device.
 
 ---
 
-## 🔐 Account Validation
+## 🔐 Duplicate Account Protection
 
-Account names must be unique.
+The application prevents users from creating duplicate account names.
 
-The app prevents duplicate accounts using case-insensitive name comparison.
+Account names are checked after trimming unnecessary spaces and comparing names without considering letter case.
 
-For example, if:
+For example:
 
-```text
-Sankeerthana
-```
+* `user`
+* `User`
+* `USER`
+* `user`
 
-already exists, these are treated as the same name:
+are treated as the same account name.
 
-```text
-sankeerthana
-SANKEERTHANA
-Sankeerthana
- Sankeerthana
-```
+When a duplicate is detected, the application displays:
 
-The user receives a message such as:
+**Account already exists ⚠️**
 
-> **Account already exists ⚠️**
-> An account with this name already exists.
-> Please use another name.
+> An account with this name already exists. Please use another name.
+
+The existing account and its data are not overwritten or deleted.
 
 ---
 
 ## 📸 Photo Management
 
-Users can:
+Users can associate real photos with their saved belongings.
 
-* Take a photo using the camera
-* Select a photo from the gallery
-* View the saved photo
-* Replace a photo
-* Remove a photo
+The application supports:
 
-Photos are stored locally in the application's storage.
+* 📷 Taking photos using the camera
+* 🖼️ Selecting photos from the device
+* 👀 Previewing photos
+* 🔄 Replacing photos
+* ❌ Removing photos
 
----
-
-## 💾 Local & Offline-First
-
-The core application stores data locally on the device.
-
-The project does not require:
-
-* Firebase
-* Cloud database
-* Paid APIs
-* Paid AI services
-* Monthly subscriptions
-* Online backend
-
-This makes the core item-management functionality available offline.
+Photos are stored locally on the device.
 
 ---
 
-## 🎨 UI / UX
+## ✏️ Edit & Delete
 
-The application uses a light pastel design with:
+Saved items can be managed after creation.
 
-* 🌸 Soft pastel colors
-* 📱 Clean layouts
-* ✨ Friendly visual elements
-* 📍 Meaningful icons and emojis
-* 🔎 Clear search interface
-* 🧭 Simple navigation
-* 👌 Readable text and controls
+### Edit
 
-The goal is to keep the application simple, friendly, and easy to use.
+Users can update:
+
+* Item name
+* Photo
+* Location
+* Notes
+
+### Delete
+
+Items can be deleted when they are no longer needed, with a confirmation step to help prevent accidental deletion.
 
 ---
 
-## 🛠️ Tech Stack
+## 💾 Offline-First Architecture
 
-| Technology           | Purpose                        |
-| -------------------- | ------------------------------ |
-| Kotlin               | Programming language           |
-| Jetpack Compose      | UI development                 |
-| Material 3           | UI components                  |
-| Room Database        | Local data storage             |
-| Kotlin Coroutines    | Asynchronous operations        |
-| Kotlin Flow          | Reactive data updates          |
-| Android Camera APIs  | Taking photos                  |
-| Android Photo Picker | Selecting photos               |
-| Coil                 | Image loading                  |
-| Google ML Kit        | Experimental image recognition |
+The application is designed to work without requiring an internet connection for its core functionality.
+
+User data is stored locally:
+
+```text
+                 Android App
+                     │
+          ┌──────────┴──────────┐
+          │                     │
+          ▼                     ▼
+   Room Database          Local Photo Files
+          │
+          ▼
+     Item Information
+```
+
+There is no Firebase or cloud database required for the core application.
+
+---
+
+## 🔒 Privacy
+
+Privacy is one of the main design goals of the application.
+
+The core application does not require:
+
+* ❌ Firebase
+* ❌ Cloud database
+* ❌ Online authentication
+* ❌ Paid APIs
+* ❌ External backend
+
+The user's saved item information and photos remain stored locally on the device.
 
 ---
 
 ## 🏗️ Architecture
 
-The application follows a layered architecture:
+The project follows a modern Android architecture using a layered approach.
 
 ```text
-UI
- ↓
-ViewModel
- ↓
-Repository
- ↓
-Room Database
+┌────────────────────────────┐
+│       Jetpack Compose      │
+│             UI             │
+└─────────────┬──────────────┘
+              │
+              ▼
+┌────────────────────────────┐
+│          ViewModel         │
+└─────────────┬──────────────┘
+              │
+              ▼
+┌────────────────────────────┐
+│         Repository         │
+└─────────────┬──────────────┘
+              │
+              ▼
+┌────────────────────────────┐
+│            DAO             │
+└─────────────┬──────────────┘
+              │
+              ▼
+┌────────────────────────────┐
+│       Room Database        │
+└────────────────────────────┘
 ```
 
 ### UI Layer
 
-Built using Jetpack Compose.
-
 Responsible for:
 
-* Screens
-* Components
+* Screen design
 * User interactions
+* Forms
+* Search interface
 * Navigation
+* Material 3 components
 
-### ViewModel Layer
+### ViewModel
 
 Responsible for:
 
 * UI state
-* User actions
-* Connecting UI with application logic
+* Business logic
+* Search state
+* Managing data flow
 
-### Repository Layer
+### Repository
 
-Responsible for:
+Provides an abstraction between the UI/ViewModel and database layer.
 
-* Data operations
-* Connecting ViewModels with the database
+### Room Database
 
-### Database Layer
-
-Room is used for persistent local data storage.
+Provides local persistent storage for item and account information.
 
 ---
 
-## 📁 Project Structure
+## 🛠️ Tech Stack
+
+| Technology               | Purpose                         |
+| ------------------------ | ------------------------------- |
+| **Kotlin**               | Primary programming language    |
+| **Jetpack Compose**      | Android UI                      |
+| **Material 3**           | Design system and UI components |
+| **Room Database**        | Local data persistence          |
+| **Kotlin Coroutines**    | Asynchronous operations         |
+| **Kotlin Flow**          | Reactive data streams           |
+| **ViewModel**            | UI state management             |
+| **Repository Pattern**   | Data abstraction                |
+| **Android Camera API**   | Taking photos                   |
+| **Android Photo Picker** | Selecting photos                |
+| **Coil**                 | Image loading                   |
+| **Gradle**               | Build system                    |
+
+---
+
+## 📂 Project Structure
 
 ```text
-app/
-└── src/
-    └── main/
-        ├── java/
-        │   └── com/
-        │       └── wheredidikeepit/
-        │           └── app/
-        │               │
-        │               ├── data/
-        │               │   ├── dao/
-        │               │   ├── database/
-        │               │   ├── entity/
-        │               │   └── repository/
-        │               │
-        │               ├── ui/
-        │               │   ├── components/
-        │               │   └── screens/
-        │               │
-        │               ├── viewmodel/
-        │               │
-        │               └── utils/
-        │                   ├── engine/
-        │                   └── ...
-        │
-        ├── assets/
-        │   └── models/
-        │
-        └── res/
-            ├── drawable/
-            ├── mipmap/
-            └── values/
-
-gradle/
-├── libs.versions.toml
-└── ...
-
-build.gradle.kts
-settings.gradle.kts
-README.md
+Find_Item/
+│
+├── app/
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/
+│   │       │   └── com/
+│   │       │       └── wheredidikeepit/
+│   │       │           └── app/
+│   │       │
+│   │       ├── res/
+│   │       └── AndroidManifest.xml
+│   │
+│   ├── build.gradle.kts
+│   └── proguard-rules.pro
+│
+├── gradle/
+│
+├── screenshots/
+│   ├── welcome.png
+│   ├── account.png
+│   ├── home.png
+│   ├── add-item.png
+│   ├── location.png
+│   ├── search.png
+│   ├── item-details.png
+│   └── settings.png
+│
+├── .gitignore
+├── build.gradle.kts
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── README.md
+└── settings.gradle.kts
 ```
 
 ---
 
-## 📱 Development Device
+## 📦 Download the App
 
-The application has been tested on a physical Android device:
+The APK can be distributed through **GitHub Releases**.
 
-```text
-Device: realme 11 Pro+ 5G
-Model: RMX3741
+### Latest Version
+
+👉 **[Download APK](../../releases/latest)**
+
+The APK can be installed directly on an Android device for testing.
+
+### Installation
+
+1. Open the Releases page.
+2. Download the latest `.apk` file.
+3. Transfer it to your Android device if necessary.
+4. Open the APK.
+5. Allow installation from the requested source if Android asks for permission.
+6. Install the application.
+7. Open **Where Did I Keep It?**
+8. Create an account and start saving your belongings.
+
+> The APK available through GitHub Releases is intended for demonstration and testing.
+
+---
+
+## 💻 Run the Project Locally
+
+### Requirements
+
+* Android Studio
+* JDK 17
+* Android SDK
+* Android device or Android Emulator
+* USB debugging enabled when using a physical device
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/KoletiSankeerthana/Find_Item.git
 ```
 
-Testing on a physical device is used to verify actual application behavior rather than relying only on an emulator.
+Then:
+
+```bash
+cd Find_Item
+```
+
+Open the project in **Android Studio** and allow Gradle to sync.
+
+---
+
+## 🔨 Build the APK
+
+On Windows:
+
+```bash
+.\gradlew.bat assembleDebug
+```
+
+The generated debug APK will be located at:
+
+```text
+app/build/outputs/apk/debug/app-debug.apk
+```
+
+---
+
+## ▶️ Run on Android Device
+
+1. Open the project in Android Studio.
+2. Connect an Android device.
+3. Enable USB debugging.
+4. Select the connected device.
+5. Click **Run** in Android Studio.
+
+The application will be installed directly on the device.
 
 ---
 
 ## 🧪 Testing
 
-The following major workflows have been tested:
+The application has been tested on a physical Android device.
 
-### Accounts
+### Tested Functionality
 
-* ✅ Create account
-* ✅ Select existing account
+* ✅ Application build
+* ✅ Application installation
+* ✅ Application launch
+* ✅ Welcome flow
+* ✅ Account creation
+* ✅ Existing account selection
 * ✅ Multiple accounts
 * ✅ Duplicate account validation
-* ✅ Case-insensitive account validation
-
-### Items
-
-* ✅ Add item
-* ✅ Take photo
-* ✅ Select gallery photo
-* ✅ Add custom location
-* ✅ Multiple location levels
-* ✅ Add notes
-* ✅ Save item
-* ✅ View item details
-* ✅ Edit item
-* ✅ Delete item
-* ✅ Item history
-
-### Search
-
-* ✅ Search by item name
-* ✅ Search by location
-* ✅ Search by notes
+* ✅ Home screen
+* ✅ Add Item
+* ✅ Camera
+* ✅ Photo Picker
+* ✅ Photo preview
+* ✅ Photo replacement
+* ✅ Photo removal
+* ✅ Item validation
+* ✅ Custom locations
+* ✅ Multi-level locations
+* ✅ Location editing
+* ✅ Search
+* ✅ Location search
+* ✅ Notes search
 * ✅ Search suggestions
 * ✅ Recent searches
-* ✅ Sorting
-* ✅ Filters
-* ✅ Favorites / pinned items
-
-### Persistence
-
-* ✅ Local Room storage
-* ✅ Items remain after closing the app
-* ✅ Photos remain locally available
-* ✅ Account data is stored locally
-
----
-
-## 🤖 Image Recognition
-
-On-device image recognition was explored using local ML models.
-
-However, the recognition results were not sufficiently reliable for the application's intended use.
-
-Therefore, image recognition is currently treated as an **experimental / paused feature**.
-
-The user can always manually enter the correct item name.
+* ✅ Sorting and filtering
+* ✅ Favorites / pinning
+* ✅ Item details
+* ✅ Item editing
+* ✅ Item deletion
+* ✅ Room persistence
+* ✅ Application restart persistence
+* ✅ Settings
+* ✅ About screen
 
 ---
 
-## 🚧 Future Improvements
+## 🧠 Image Recognition
 
-Possible future features include:
+An experimental on-device image recognition feature was explored during development.
 
-* 🗂️ Item categories
-* 🗺️ Location explorer
-* 📸 Grid and list views
-* 🔔 Item reminders
+The goal was to automatically identify objects in item photos and provide suggestions.
+
+However, general-purpose image recognition models did not provide sufficiently reliable results for the application's intended use cases.
+
+Therefore, image recognition is currently considered **experimental and paused**.
+
+The core application does **not depend on image recognition**.
+
+---
+
+## 🎨 Design Goals
+
+The application was designed around the following principles:
+
+### Simple
+
+Users should be able to save an item quickly.
+
+### Fast
+
+Finding a saved item should take only a few seconds.
+
+### Private
+
+Personal belongings and their locations should remain local.
+
+### Flexible
+
+Users should be able to define locations based on their actual storage system.
+
+### Offline
+
+The core application should remain functional without internet connectivity.
+
+### User Friendly
+
+The interface uses a clean Material 3 design with a soft pastel visual style.
+
+---
+
+## 🚧 Current Status
+
+### ✅ Completed
+
+* Android project setup
+* Jetpack Compose UI
+* Material 3 design
+* Welcome experience
+* Multiple local accounts
+* Account validation
+* Duplicate account protection
+* Home screen
+* Add Item workflow
+* Camera integration
+* Photo Picker
+* Local photo storage
+* Room database
+* Offline persistence
+* Custom hierarchical locations
+* Search
+* Search suggestions
+* Recent searches
+* Sorting
+* Filtering
+* Favorites / pinning
+* Item details
+* Item editing
+* Item deletion
+* Settings
+* About
+* Physical-device testing
+
+### 🧪 Experimental
+
+* On-device image recognition
+
+### ⏸️ Paused
+
+* Advanced automatic image recognition due to recognition accuracy limitations
+
+---
+
+## 🗺️ Future Roadmap
+
+Possible future improvements include:
+
+* ⏰ Item reminders
+* 🏷️ Categories
+* 🗺️ Location Explorer
+* 🖼️ Grid/List view
 * 📤 Share item information
 * 🔐 App lock
 * 📊 Usage statistics
-* 🤖 Improved offline image recognition
-
-These features are planned for future development and are not part of the current stable feature set.
+* ⚠️ Duplicate item detection
+* 📍 Advanced location navigation
+* 🔎 More advanced search capabilities
+* ⚡ Performance optimization
+* ♿ Accessibility improvements
+* 🧪 Expanded automated testing
 
 ---
 
-## 🎯 Project Goal
+## 📚 Android Concepts Demonstrated
 
-The goal of **Where Did I Keep It?** is to solve a simple everyday problem:
+This project demonstrates practical experience with:
 
-> **"I remember the thing, but I don't remember where I kept it."**
+* Kotlin
+* Jetpack Compose
+* Material 3
+* MVVM architecture
+* Repository pattern
+* Room Database
+* DAO
+* Coroutines
+* Flow
+* Navigation
+* Runtime permissions
+* Camera integration
+* Android Photo Picker
+* Local file storage
+* Image loading
+* Form validation
+* Search functionality
+* Multi-account data management
+* Offline-first architecture
+* Physical-device testing
 
-Instead of searching through rooms, drawers, cupboards, and shelves, users can save the information once and find it whenever they need it.
+---
 
-### Example
+## 🌟 Project Highlights
+
+### 📍 Flexible Location System
+
+Create detailed locations instead of being restricted to predefined options.
+
+### 📸 Real Photos
+
+Attach actual photos of belongings for easier identification.
+
+### 🔎 Powerful Search
+
+Find items through their name, location, or notes.
+
+### 👤 Multiple Users
+
+Maintain separate local collections for different users.
+
+### 🔐 Privacy Focused
+
+No cloud backend is required for the core application.
+
+### 💾 Persistent Storage
+
+Saved information remains available after closing and reopening the application.
+
+### 📱 Real Android Application
+
+Built and tested as a native Android application using Kotlin and Jetpack Compose.
+
+---
+
+## 📊 Example
+
+Suppose you store your headphones in a drawer.
+
+You can save:
 
 ```text
-🔑 Keys
+📦 Item
+Headphones
 
-📍 Home → Hall → Cupboard → Top Shelf
+📍 Location
+Home → Bedroom → Study Table → Top Drawer
 
-📝 Behind the document box
+📝 Notes
+Kept inside the black pouch.
 ```
 
-**Save it once. Remember where. Find it later. 📍**
+Later, search:
+
+```text
+Headphones
+```
+
+and the application shows:
+
+```text
+📦 Headphones
+
+📍 Home → Bedroom → Study Table → Top Drawer
+
+📝 Kept inside the black pouch.
+```
+
+No need to remember where you put them. ✨
 
 ---
 
-## 📌 Project Status
+## 🔗 Repository
 
-The core application is currently under active development.
+**GitHub:**
+[https://github.com/KoletiSankeerthana/Find_Item](https://github.com/KoletiSankeerthana/Find_Item)
 
-Major implemented functionality includes:
+---
 
-* Account management
-* Item management
-* Camera and gallery
-* Custom locations
-* Notes
-* Search
-* Filters
-* Favorites
-* Item history
-* Local persistence
-* Light pastel UI
+## 👨‍💻 Author
 
-Additional features and UI/UX improvements will be added incrementally.
+### Koleti Sankeerthana
+
+GitHub:
+[https://github.com/KoletiSankeerthana](https://github.com/KoletiSankeerthana)
+
+---
+
+## ⭐ Support
+
+If you find this project interesting:
+
+* ⭐ Star the repository
+* 🍴 Fork the project
+* 🐛 Report bugs
+* 💡 Suggest improvements
+* 🤝 Contribute ideas
 
 ---
 
 ## 📄 License
 
-License information will be added when the project license is finalized.
+This project currently does not specify an open-source license.
 
+A suitable license can be added in the future if the project is released as an open-source project.
+
+---
+
+## 📌 Summary
+
+**Where Did I Keep It?** is an offline-first Android application that helps users remember where they stored their belongings.
+
+### The idea is simple:
+
+**📸 Save it → 📍 Remember where → 🔎 Find it later**
+
+> **Remember where. Find when. ✨**
+
+````
+
+### ⚠️ Very important when you paste it
+
+Your current screenshot shows this:
+
+```text
+# 📍 Where Did I Keep It?
+````
+
+appearing literally on the page.
+
+That usually means the README content itself has been pasted **inside a Markdown code block**.
+
+Make sure your GitHub `README.md` starts exactly like this:
+
+```text
+# 📍 Where Did I Keep It?
+
+### Remember where. Find when. ✨
 ```
 
-### One important thing
+**Do not put three backticks before the first `#` or after the last line.**
 
-In GitHub, your README should **start directly with**:
+### 📸 For your screenshots
 
-> `# 📍 Where Did I Keep It?`
+Create this folder in your GitHub repository:
 
-—not:
-
-> "Absolutely bro. Since you said..."
-
-That first explanatory text was from our conversation, **not part of the README**.
-
-So **select everything currently inside `README.md`, delete it, and paste only the code above.**
+```text
+screenshots
 ```
+
+Then upload your actual app screenshots:
+
+```text
+screenshots/
+├── welcome.png
+├── account.png
+├── home.png
+├── add-item.png
+├── location.png
+├── search.png
+├── item-details.png
+└── settings.png
+```
+
+Once those files are uploaded, the README will display them automatically.
+
+For the **APK**, I'd keep it in **GitHub Releases rather than inside the repository**. Then this line:
+
+```markdown
+[Download APK](../../releases/latest)
+```
+
+will take users directly to your latest release.
+
+This gives your GitHub project the professional flow:
+
+**README → Features → Screenshots → Tech Stack → Architecture → Source Code → Download APK → Testing → Roadmap**.
