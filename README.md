@@ -56,7 +56,6 @@ Save an item with a **photo, name, location, and notes**, then quickly find it l
 
 <p align="center">
  <img width="716" height="1599" alt="WhatsApp Image 2026-09-12 at 13 18 22" src="https://github.com/user-attachments/assets/d46cb95d-70af-4cd6-8128-7fa20c59ba23" />
-/>
 </p>
 
 
